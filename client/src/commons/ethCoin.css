@@ -1,0 +1,176 @@
+.animation-container {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  left: 50%;
+  transform: translateX(-50%); /* Para centrar horizontalmente */
+  top: 490px; /* Ajusta esta distancia para que esté debajo del header */
+  z-index: 100; /* Asegura que la moneda esté por encima de otros elementos */
+}
+
+.coin-container {
+  position: relative;
+  top: 45px;
+  height: 30%;
+  width: 30%;
+  transform: scale(0.5) translateX(0) scaleY(0.7);
+}
+
+.y-axis-container {
+  animation: bounce 2.6s infinite ease-in-out;
+}
+
+.shadow {
+  animation: scaling 2.6s infinite ease-in-out;
+}
+
+.coin {
+  position: absolute;
+  height: 150px;
+  left: 0;
+  width: 96px;
+  background: gold;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.side {
+  position: absolute;
+  background: #f5b642;
+  left: 20px;
+  width: 82.5px;
+  height: 150px;
+  top: -1px;
+}
+
+.shine {
+  width: 200px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.65);
+  transform: rotate(25deg);
+  animation: shine 5s infinite;
+}
+
+.flash {
+  z-index: 200;
+  position: absolute;
+  width: 7.5px;
+  height: 7.5px;
+  background: white;
+  top: 30px;
+  right: 20px;
+  animation: flash 7s infinite;
+}
+
+.dai {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #faf20a;
+  border: 1px solid white;
+  transform: rotate(53deg) skew(26deg);
+  top: 47px;
+  left: 22px;
+  overflow: hidden;
+}
+
+.cutout {
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  background: #ffee38;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 27px;
+  left: 25px;
+}
+
+.dai-shadow {
+  z-index: 20;
+  width: 150%;
+  height: 150%;
+  background: rgba(0, 0, 0, 0.07);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 18px;
+  right: 12px;
+}
+
+.inner-dai {
+  position: relative;
+  background: white;
+  height: 70px;
+  width: 70px;
+  top: 15px;
+  left: 15px;
+}
+
+.inner-inner-dai {
+  position: relative;
+  background: #faf20a;
+  width: 18px;
+  height: 20px;
+  top: 11px;
+  left: 9px;
+}
+
+.shadow {
+  position: relative;
+  left: calc(50% - 60px);
+  top: -40px;
+  background: rgba(0, 0, 0, 0.2);
+  height: 30px;
+  width: 100px;
+  animation: scaling 2.6s infinite;
+  border-radius: 100%;
+}
+
+@keyframes bounce {
+  20% {
+    animation-timing-function: ease-out;
+    transform: translateY(-10px);
+  }
+
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes scaling {
+  20% {
+    transform: scale(0.6);
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes flash {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  8% {
+    transform: rotate(0deg) scale(0);
+  }
+  10% {
+    transform: rotate(150deg) scale(1.8);
+  }
+  15% {
+    transform: rotate(45deg) scale(0);
+  }
+  100% {
+    transform: rotate(45deg) scale(0);
+  }
+}
+
+@keyframes shine {
+  20% {
+    transform: rotate(25deg) translateY(400px);
+  }
+
+  100% {
+    transform: rotate(25deg) translateY(400px);
+  }
+}

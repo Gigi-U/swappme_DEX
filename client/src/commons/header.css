@@ -1,0 +1,52 @@
+/* Header.css */
+
+/* Estilo del header */
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  z-index: 1;
+}
+
+/* Estilo para el logo */
+.logo {
+  height: 100px;
+}
+
+/* Estilo del botón */
+.header-button {
+  background-color: transparent;
+  color: white;
+  border: 0.8px solid rgba(255, 255, 255, 0.708);
+  padding: 10px 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+  background-color: rgba(37, 65, 136, 0.32); /* Efecto hover con fondo transparente */
+}
+
+/* Estilo cuando el botón está conectado */
+.header-button.connected {
+  background-color: rgba(214, 13, 170, 0.966); /* Fondo cuando está conectado */
+  border: 0.2px solid #ffffffb6; /* Borde blanco */
+  box-shadow: 0 0 5px 1px rgba(214, 13, 170, 0.966), 0 0 10px 2px rgba(214, 13, 170, 0.966); /* Efecto neón */
+}
+
+.header-button.connected p {
+  color: #08081f; /* Color del texto cuando está conectado */
+}
+
+.header-button p {
+  color: rgba(214, 13, 170, 0.966);
+  font-weight: bolder;
+  font-size: 13px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

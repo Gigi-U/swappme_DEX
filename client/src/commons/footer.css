@@ -1,0 +1,17 @@
+/* commons/Footer.css */
+.footer {
+    background-color: #121111; /* Fondo oscuro similar al header */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Centrado del texto */
+    padding: 10px 0; /* Espaciado alrededor del texto */
+    font-size: 14px; /* Tamaño de la fuente */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .footer p {
+    margin: 0; /* Elimina el margen por defecto */
+  }
+  

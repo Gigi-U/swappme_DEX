@@ -1,0 +1,189 @@
+.App {
+  text-align: center;
+}
+
+/* Ocultar el overflow del cuerpo */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Desactivar desbordamiento horizontal */
+}
+
+/* Estilo del div transparente en el centro */
+.center-box {
+  position: absolute;
+  top:50%; /* Espacio para el header */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 100%;
+  max-width: 90%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.212);
+  border-radius: 10px;
+  text-align: left;
+  color: white;
+  z-index: 2; /* Asegura que esté por encima de las estrellas */
+  display: flex;
+  flex-direction: column; /* Los elementos se alinean en columnas */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Estilo para la palabra DEX */
+.dex-title {
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: left;
+  margin: 0;
+  width: 100%;
+  padding: 0px 0px 10px 0px;
+}
+
+/* Contenedor de los paneles (divs) */
+.boxes-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los paneles se ajusten */
+  justify-content: space-between; /* Espacio entre los paneles */
+  gap: 20px;
+  width: 100%;
+  height: auto; /* Ajusta la altura automáticamente */
+}
+
+/* Estilo para cada panel-box */
+.panel-box {
+  padding: 1px 20px 20px 20px;
+  background-color: rgb(23, 23, 33);
+  border-radius: 2px;
+  text-align: left;
+  width: 23%; /* Los divs ocuparán un 30% del ancho */
+  min-width: 250px; /* Asegura que cada div no sea demasiado pequeño */
+  box-sizing: border-box; /* Asegura que los bordes no rompan el tamaño */
+}
+.panel-box h3{
+  font-size: 15px;
+  font-weight: bolder;
+  margin-top: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.panel-box p{
+  margin-top: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+
+}
+
+.panel-box input {
+  border-radius: 2px;
+  padding: 10px 10px;
+  width: 90%;
+  margin-top: 8px;
+  background-color:  #19191a00;
+  border: 0.1px solid #ffffff22; /* Borde blanco */
+  color: white;
+}
+/* Botón Convert similar al de Connect Wallet */
+.convert-button {
+  margin-top: 20px;
+  background-color: rgba(214, 13, 170, 0); /* Fondo cuando está conectado */
+  color:  rgb(23, 23, 33); /* Color de texto */
+  border: 0.1px solid rgba(214, 13, 170, 0.966); 
+  color: rgba(214, 13, 170, 0.966);
+  border-radius: 1px;
+  padding: 10px 10px;
+  width: 98%;
+  margin-right: 20px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase; /* Hacer texto en mayúsculas */
+}
+
+/* Se mantiene el color cuando el botón fué seleccionado (focus) */
+.convert-button:focus {
+  outline: none; /* Eliminar el contorno por defecto */
+  background-color: #45a049; /* Color de fondo verde cuando está en foco */
+  color: white; /* Color del texto blanco cuando está en foco */
+  border-color: #45a049; /* Borde verde cuando está en foco */
+}
+
+/* Cambio de color cuando se pasa el ratón por encima (hover) */
+.convert-button:hover {
+  background-color: #3e8e41; /* Color de fondo verde oscuro cuando hover */
+  border:none;
+  color: white; /* Color del texto blanco al hacer hover */
+}
+
+/* Estilo cuando el botón está presionado (active) */
+.convert-button:active {
+  background-color: #367c35; /* Color de fondo verde aún más oscuro cuando está presionado */
+  border-color: #367c35; /* Borde verde aún más oscuro cuando está presionado */
+  color: white; /* Color del texto blanco cuando está presionado */
+}
+
+/* Estilo para el select */
+select {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  background-color:  rgb(23, 23, 33); /* Fondo cuando está conectado */
+  color:rgba(214, 13, 170, 0.966); /* Color de texto */
+  font-weight: bolder;
+  border: 0.1px solid #ffffff22; /* Borde blanco */
+  /*border-top: none;*/
+  border-radius: 1px;
+  padding: 10px 10px;
+  width: 98%;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+/* Estilo cuando el select está enfocado (clickeado) */
+select:focus {
+  background-color: rgb(23, 23, 33);     /* Fondo blanco para las opciones */
+  color: rgba(214, 13, 170, 0.966);
+  outline: none;              /* Elimina el borde predeterminado de foco */
+}
+
+/* Estilo para las opciones dentro del select */
+option {
+  background-color: rgb(23, 23, 33);     /* Fondo blanco para las opciones */
+  color: #ffffff;                /* Color de texto oscuro */
+  padding: 10px;              /* Relleno de las opciones */
+}
+
+/* Estilo de la opción seleccionada */
+option:checked {
+  color: white;               /* Color blanco para el texto seleccionado */
+}
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .center-box {
+    width: 90%; /* Aumenta el ancho en pantallas pequeñas */
+    height: auto; /* Ajusta la altura */
+  }
+
+  .boxes-container {
+    flex-direction: column; /* Los divs estarán uno encima del otro */
+    gap: 10px; /* Espacio entre los divs */
+    width: 100%;
+  }
+
+  .panel-box {
+    width: 100%; /* Los divs ocupan el 100% del ancho en pantallas pequeñas */
+  }
+}
