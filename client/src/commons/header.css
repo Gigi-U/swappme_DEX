@@ -1,19 +1,27 @@
-/* Header.css */
-
 /* Estilo del header */
 .App-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* Asegura que el logo y el botón estén en los extremos */
+  align-items: center; /* Alinea el contenido verticalmente en el centro */
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
   z-index: 1;
+  padding: 10px 20px;
 }
 
 /* Estilo para el logo */
 .logo {
   height: 100px;
+  margin-right: auto; /* Asegura que el logo se quede a la izquierda */
+}
+
+/* Contenedor para el botón */
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alinea el botón a la derecha */
+  margin-right: 20px;
 }
 
 /* Estilo del botón */
@@ -30,7 +38,7 @@
 }
 
 .header-button:hover {
-  background-color: rgba(37, 65, 136, 0.32); /* Efecto hover con fondo transparente */
+  background-color: rgba(37, 65, 136, 0.32);
 }
 
 /* Estilo cuando el botón está conectado */
@@ -40,13 +48,32 @@
   box-shadow: 0 0 5px 1px rgba(214, 13, 170, 0.966), 0 0 10px 2px rgba(214, 13, 170, 0.966); /* Efecto neón */
 }
 
-.header-button.connected p {
-  color: #08081f; /* Color del texto cuando está conectado */
-}
-
+/* Estilo del texto dentro del botón */
 .header-button p {
   color: rgba(214, 13, 170, 0.966);
   font-weight: bolder;
   font-size: 13px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header-button.connected p {
+  color: #08081f; /* Color del texto cuando está conectado */
+}
+
+/* Estilo para el contenedor de la dirección de la wallet */
+.wallet-address-container {
+  display: flex;
+  justify-content: center; /* Centra la dirección de la wallet */
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+/* Estilo para la dirección de la wallet */
+.wallet-address {
+  color: rgba(255, 255, 255, 0.692);
+  font-size: 15px;
+  font-weight: bold;
+  width: min-content;
 }
