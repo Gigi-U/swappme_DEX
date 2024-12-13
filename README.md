@@ -26,53 +26,53 @@ Frontend for a decentralized exchange (DEX) built with Solidity, enabling users 
 
 ## ESTRUCTURA
 
-SWAPPME_DEX
-|_client (frontend React - ethers)
-|   |_node_modules
-|   |_public
-|   |_src
-|   |   |_assets
-|   |   |   |_img
-|   |   |_commons
-|   |   |   |_ethCoin.css
-|   |   |   |_ethCoin.js
-|   |   |   |_footer.css
-|   |   |   |_footer.js
-|   |   |   |_header.css
-|   |   |   |_header.js
-|   |   |_services
-|   |   |   |_connectWallet.js
-|   |   |_App.css
-|   |   |_App.js
-|   |   |_App.test.js
-|   |   |_index.css
-|   |   |_index.js
-|   |   |_reportWerVitals.js
-|   |   |_setipTests.js
-|   |   |_shootingStars.css
-|   |_.gitignore
-|   |_package-lock.json
-|   |_package.json
-|   |_README.md
-|_contracts (backend hardhat - ethers - express -cors - .env)
-|   |_artifacts
-|   |   |_build-info
-|   |   |_contracts
-|   |_cache
-|   |_contracts
-|   |_node_modules
-|   |_scripts
-|   |   |_deploy.js
-|   |_test
-|   |_.env
-|   |_.gitignore
-|   |_hardhat.config.js
-|   |_package-lock.json
-|   |_package.json
-|   |_README.md
-|   |_server.js
-|_LICENSE
-|_README.md
+    SWAPPME_DEX
+    |_client (frontend React - ethers)
+    |   |_node_modules
+    |   |_public
+    |   |_src
+    |   |   |_assets
+    |   |   |   |_img
+    |   |   |_commons
+    |   |   |   |_ethCoin.css
+    |   |   |   |_ethCoin.js
+    |   |   |   |_footer.css
+    |   |   |   |_footer.js
+    |   |   |   |_header.css
+    |   |   |   |_header.js
+    |   |   |_services
+    |   |   |   |_connectWallet.js
+    |   |   |_App.css
+    |   |   |_App.js
+    |   |   |_App.test.js
+    |   |   |_index.css
+    |   |   |_index.js
+    |   |   |_reportWerVitals.js
+    |   |   |_setipTests.js
+    |   |   |_shootingStars.css
+    |   |_.gitignore
+    |   |_package-lock.json
+    |   |_package.json
+    |   |_README.md
+    |_contracts (backend hardhat - ethers - express -cors - .env)
+    |   |_artifacts
+    |   |   |_build-info
+    |   |   |_contracts
+    |   |_cache
+    |   |_contracts
+    |   |_node_modules
+    |   |_scripts
+    |   |   |_deploy.js
+    |   |_test
+    |   |_.env
+    |   |_.gitignore
+    |   |_hardhat.config.js
+    |   |_package-lock.json
+    |   |_package.json
+    |   |_README.md
+    |   |_server.js
+    |_LICENSE
+    |_README.md
 
 ## COMPORTAMIENTO DEL SITIO
 
@@ -81,3 +81,7 @@ SWAPPME_DEX
 3. al loguearse en su wallet cambia el boton a WALLET CONNECTED y aparece la dirección de cuenta conectada.
 4. el usuario puede cambiar de address para trabajar con una nueva cuenta de su wallet.
 al desloguearse de la wallet se cierra la conexión con el frontend. Desaparece la info de cuenta y el botón de conexion cambia al estado original
+5. el usuario puede hacer un swap entre TokenA y TokenB
+6. el usuario puede agregar liquidez
+7. el usuario puede quitar liquidez
+8. el usuario puede ver el precio de un token. 
