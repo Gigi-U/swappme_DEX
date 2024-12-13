@@ -24,6 +24,55 @@ Frontend for a decentralized exchange (DEX) built with Solidity, enabling users 
 1. deployar backend
 2. desployar frontend
 
+## ESTRUCTURA
+
+SWAPPME_DEX
+|_client (frontend React - ethers)
+|   |_node_modules
+|   |_public
+|   |_src
+|   |   |_assets
+|   |   |   |_img
+|   |   |_commons
+|   |   |   |_ethCoin.css
+|   |   |   |_ethCoin.js
+|   |   |   |_footer.css
+|   |   |   |_footer.js
+|   |   |   |_header.css
+|   |   |   |_header.js
+|   |   |_services
+|   |   |   |_connectWallet.js
+|   |   |_App.css
+|   |   |_App.js
+|   |   |_App.test.js
+|   |   |_index.css
+|   |   |_index.js
+|   |   |_reportWerVitals.js
+|   |   |_setipTests.js
+|   |   |_shootingStars.css
+|   |_.gitignore
+|   |_package-lock.json
+|   |_package.json
+|   |_README.md
+|_contracts (backend hardhat - ethers - express -cors - .env)
+|   |_artifacts
+|   |   |_build-info
+|   |   |_contracts
+|   |_cache
+|   |_contracts
+|   |_node_modules
+|   |_scripts
+|   |   |_deploy.js
+|   |_test
+|   |_.env
+|   |_.gitignore
+|   |_hardhat.config.js
+|   |_package-lock.json
+|   |_package.json
+|   |_README.md
+|   |_server.js
+|_LICENSE
+|_README.md
 
 ## COMPORTAMIENTO DEL SITIO
 
