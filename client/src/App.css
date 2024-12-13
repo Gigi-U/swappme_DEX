@@ -23,7 +23,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.212);
   border-radius: 10px;
   text-align: left;
-  color: white;
+  color: rgb(255, 255, 255);
   z-index: 2; /* Asegura que esté por encima de las estrellas */
   display: flex;
   flex-direction: column; /* Los elementos se alinean en columnas */

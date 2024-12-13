@@ -77,7 +77,7 @@ function App() {
             {conversionType === "AtoB" ? (
               <>
                 <p>From</p>
-                <p>Balance:0</p>
+                <span style={{ fontSize:'12px',color: 'rgb(2, 216, 223)', display: 'block', textAlign: 'right', marginRight: '20px' }}>Balance: 0</span>
                 <input type="text" placeholder="Enter TokenA Address" />
                 <p>To</p>
                 <p>Balance:0</p>
