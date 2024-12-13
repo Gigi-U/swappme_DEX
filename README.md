@@ -81,3 +81,8 @@ Frontend for a decentralized exchange (DEX) built with Solidity, enabling users 
 3. al loguearse en su wallet cambia el boton a WALLET CONNECTED y aparece la dirección de cuenta conectada.
 4. el usuario puede cambiar de address para trabajar con una nueva cuenta de su wallet.
 al desloguearse de la wallet se cierra la conexión con el frontend. Desaparece la info de cuenta y el botón de conexion cambia al estado original
+5. el usuario puede hacer un swap entre TokenA y TokenB
+6. el usuario puede agregar liquidez
+7. el usuario puede quitar liquidez
+8. el usuario puede ver el precio de un token. 
+
