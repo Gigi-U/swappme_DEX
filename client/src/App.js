@@ -77,8 +77,10 @@ function App() {
             {conversionType === "AtoB" ? (
               <>
                 <p>From</p>
+                <p>Balance:0</p>
                 <input type="text" placeholder="Enter TokenA Address" />
                 <p>To</p>
+                <p>Balance:0</p>
                 <input type="text" placeholder="Enter TokenB Address" />
               </>
             ) : (
@@ -91,7 +93,7 @@ function App() {
             )}
 
             {/* Botón debajo de los campos */}
-            <button className="convert-button">Convert</button>
+            <button className="convert-button">Swap</button>
           </div>
 
           {/* Panel 2: Agregar Liquidez */}
