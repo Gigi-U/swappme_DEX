@@ -85,3 +85,4 @@ al desloguearse de la wallet se cierra la conexión con el frontend. Desaparece 
 6. el usuario puede agregar liquidez
 7. el usuario puede quitar liquidez
 8. el usuario puede ver el precio de un token. 
+
