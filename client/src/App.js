@@ -61,14 +61,14 @@ function App() {
 
       {/* Agregar el div transparente en el centro */}
       <div className="center-box">
-        <h1 className="dex-title">DEX</h1>        
+        <h1 className="dex-title">Token Actions</h1>        
 
 
         {/* Contenedor de los paneles */}
         <div className="boxes-container">
           {/* Panel 1: From and To */}
           <div className="panel-box">
-            <h3>Swapp Tokens</h3>
+            <h3>SWAPP</h3>
             <select onChange={handleConversionTypeChange} value={conversionType}>
               <option value="AtoB">From Token A to Token B</option>
               <option value="BtoA">From Token B  to Token A</option>
@@ -77,18 +77,24 @@ function App() {
             {conversionType === "AtoB" ? (
               <>
                 <p>From</p>
-                <span style={{ fontSize:'12px',color: 'rgb(2, 216, 223)', display: 'block', textAlign: 'right', marginRight: '20px' }}>Balance: 0</span>
                 <input type="text" placeholder="Enter TokenA Address" />
+                <span style={{ fontSize:'12px',color: 'rgb(2, 216, 223)', display: 'block', textAlign: 'right', marginRight: '20px' }}>Balance: 0.0</span>
+
                 <p>To</p>
-                <p>Balance:0</p>
                 <input type="text" placeholder="Enter TokenB Address" />
+                <span style={{ fontSize:'12px',color: 'rgb(2, 216, 223)', display: 'block', textAlign: 'right', marginRight: '20px' }}>Balance: 0.0</span>
+
               </>
             ) : (
               <>
                 <p>From</p>
                 <input type="text" placeholder="Enter TokenB Address" />
+                <span style={{ fontSize:'12px',color: 'rgb(2, 216, 223)', display: 'block', textAlign: 'right', marginRight: '20px' }}>Balance: 0.0</span>
+
                 <p>To</p>
                 <input type="text" placeholder="Enter TokenA Address" />
+                <span style={{ fontSize:'12px',color: 'rgb(2, 216, 223)', display: 'block', textAlign: 'right', marginRight: '20px' }}>Balance: 0.0</span>
+
               </>
             )}
 
@@ -96,29 +102,44 @@ function App() {
             <button className="convert-button">Swap</button>
           </div>
 
-          {/* Panel 2: Agregar Liquidez */}
+          {/* Panel 2: Agregar o quitar Liquidez */}
           <div className="panel-box">
-            <h3>Add Liquidity</h3>
-            <input type="text" placeholder="Enter Token Address" />
+            <h3>MANAGE LIQUIDITY</h3>
+            <select onChange={handleConversionTypeChange} value={conversionType}>
+              <option value="addLiq">Add Liquidity</option>
+              <option value="widthLiq">Withdraw Liquidity</option>
+            </select>
+            
+            {conversionType === "addLiq" ? (
+              <>
+            <p>TokenA</p>
+            <input type="number" placeholder="Enter Amount" />
+            <p> TokenB</p>
             <input type="number" placeholder="Enter Amount" />
             <button className="convert-button">Add</button>
-          </div>
-
-          {/* Panel 3: Retirar Liquidez */}
-          <div className="panel-box">
-            <h3>Withdraw Liquidity</h3>
-            <input type="text" placeholder="Enter Token Address" />
+              </>
+            ) : (
+              <>
+            <p>TokenA</p>
+            <input type="number" placeholder="Enter Amount" />
+            <p>TokenB</p>
             <input type="number" placeholder="Enter Amount" />
             <button className="convert-button">Withdraw</button>
+              </>
+            )}
+
           </div>
 
-          {/* Panel 6: Obtener Precio de un Token */}
+          {/* Panel 3: Obtener Precio de un Token */}
           <div className="panel-box">
-            <h3>Get Token Price</h3>
-            <input type="text" placeholder="Enter Token Address" />
+            <h3>GET PRICE</h3>
+            <select onChange={handleConversionTypeChange} value={conversionType}>
+              <option value="TokenA">Token A</option>
+              <option value="TokenB">Token B </option>
+            </select>
             <button className="convert-button">Get Price</button>
             <br></br>
-            <p>X's price: xxxxxxxxxxxxxxx</p>
+            <span style={{ fontSize:'12px',color: 'rgb(2, 216, 223)', display: 'block', textAlign: 'right', marginRight: '20px' }}>Price: x.xxxxxxxxxxxxxxxxxx ETH</span>
 
           </div>
 

@@ -2,9 +2,9 @@
   position: absolute;
   width: 10%;
   height: 10%;
-  left: 50%;
+  right: 5%;
   transform: translateX(-50%); /* Para centrar horizontalmente */
-  top: 490px; /* Ajusta esta distancia para que esté debajo del header */
+  top: 420px; /* Ajusta esta distancia para que esté debajo del header */
   z-index: 100; /* Asegura que la moneda esté por encima de otros elementos */
 }
 
@@ -128,12 +128,12 @@
 @keyframes bounce {
   20% {
     animation-timing-function: ease-out;
-    transform: translateY(-10px);
+    transform: translateY(-25px);
   }
 
   50% {
     animation-timing-function: ease-out;
-    transform: translateY(-20px);
+    transform: translateY(-50px);
   }
 }
 
@@ -172,5 +172,24 @@
 
   100% {
     transform: rotate(25deg) translateY(400px);
+  }
+}
+
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+
+  .animation-container {
+    display: none;
+  }
+}
+
+
+/* Media query para pantallas pequeñas */
+@media (min-width: 1700px) {
+
+  .animation-container {
+    top: 560px; /* Ajusta esta distancia para que esté debajo del header */
   }
 }

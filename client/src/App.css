@@ -5,14 +5,15 @@
 /* Ocultar el overflow del cuerpo */
 body {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   overflow-x: hidden; /* Desactivar desbordamiento horizontal */
+
 }
 
 /* Estilo del div transparente en el centro */
 .center-box {
   position: absolute;
-  top:50%; /* Espacio para el header */
+  top:55%; /* Espacio para el header */
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
@@ -27,7 +28,6 @@ body {
   z-index: 2; /* Asegura que esté por encima de las estrellas */
   display: flex;
   flex-direction: column; /* Los elementos se alinean en columnas */
-  justify-content: flex-start;
   align-items: center;
 }
 
@@ -58,14 +58,15 @@ body {
   background-color: rgb(23, 23, 33);
   border-radius: 2px;
   text-align: left;
-  width: 23%; /* Los divs ocuparán un 30% del ancho */
+  width: 30%; /* Los divs ocuparán un 30% del ancho */
   min-width: 250px; /* Asegura que cada div no sea demasiado pequeño */
   box-sizing: border-box; /* Asegura que los bordes no rompan el tamaño */
 }
 .panel-box h3{
   font-size: 15px;
   font-weight: bolder;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .panel-box p{
@@ -172,9 +173,11 @@ option:checked {
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
+
   .center-box {
-    width: 90%; /* Aumenta el ancho en pantallas pequeñas */
+    width: 80%; /* Aumenta el ancho en pantallas pequeñas */
     height: auto; /* Ajusta la altura */
+    margin-top: 100px;
   }
 
   .boxes-container {
@@ -186,4 +189,5 @@ option:checked {
   .panel-box {
     width: 100%; /* Los divs ocupan el 100% del ancho en pantallas pequeñas */
   }
+
 }
