@@ -25,4 +25,10 @@ Frontend for a decentralized exchange (DEX) built with Solidity, enabling users 
 2. desployar frontend
 
 
- 
+## COMPORTAMIENTO DEL SITIO
+
+1. el usuario accede a la plataforma y puede visualizar el tablero de interacciones
+2. el usuario se loguea a la wallet clickeando en CONNECT WALLET
+3. al loguearse en su wallet cambia el boton a WALLET CONNECTED y aparece la dirección de cuenta conectada.
+4. el usuario puede cambiar de address para trabajar con una nueva cuenta de su wallet.
+al desloguearse de la wallet se cierra la conexión con el frontend. Desaparece la info de cuenta y el botón de conexion cambia al estado original
